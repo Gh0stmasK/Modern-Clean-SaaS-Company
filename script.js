@@ -4,22 +4,41 @@ const mButton = document.getElementById('mobile-menu-icon');
 const mediaQuery = window.matchMedia('(max-width: 799px)');
 
 function handleMediaQueryChange(e) {
-    if (e.matches) {
+    // support both MediaQueryListEvent and direct MediaQueryList passed in
+    const matches = (e && typeof e.matches === 'boolean') ? e.matches : mediaQuery.matches;
+
+    if (!parentElement) {
+        console.warn('`navigation` element not found in DOM.');
+        return;
+    }
+
+    if (matches) {
+        // Mobile view: remove the           full nav list and ensure mobile icon is present
         if (removeMenuItem && removeMenuItem.parentNode) {
             removeMenuItem.remove();
-            parentElement.appendChild(mButton);
-            console.log('Element removed.');
         }
+        if (mButton && !parentElement.contains(mButton)) {
+            parentElement.appendChild(mButton);
+        }
+        console.log('Switched to mobile layout.');
     } else {
-        parentElement.appendChild(removeMenuItem);
-        parentElement.appendChild(elementToRemove2);
-        mButton.remove();
-        console.log('Element not removed (or re-added if logic for that exists).');
+        // Desktop view: re-add the nav list if it's missing, remove mobile icon
+        if (removeMenuItem && !parentElement.contains(removeMenuItem)) {
+            parentElement.appendChild(removeMenuItem);
+        }
+        if (mButton && parentElement.contains(mButton)) {
+            mButton.remove();
+        }
+        console.log('Switched to desktop layout.');
     }
 }
 
 // Initial check when the page loads
 handleMediaQueryChange(mediaQuery);
 
-// Listen for changes in the media query
-mediaQuery.addListener(handleMediaQueryChange);
+// Modern event listener with a fallback for older browsers
+if (typeof mediaQuery.addEventListener === 'function') {
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+} else if (typeof mediaQuery.addListener === 'function') {
+    mediaQuery.addListener(handleMediaQueryChange);
+}
