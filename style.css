@@ -758,6 +758,7 @@ footer {
 @media screen and (min-width: 1px) and (max-width: 799px) {
   body {
     box-sizing: border-box;
+    width: 100%;
   }
 
   #mobile-menu-icon{
