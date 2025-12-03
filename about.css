@@ -142,6 +142,109 @@ nav .navmenu-items li a {
   cursor: pointer;
 }
 
+.values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px 20px 160px 20px;
+}
+
+#values-head {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.values-container {
+  display: flex;
+  gap: 16px;
+}
+
+.value-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 40px;
+  background-color: #f6f8fb;
+  border-radius: 16px;
+  gap: 24px;
+  width: 100%;
+}
+
+.value-list-item:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.value-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+#value-list-head {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+
+#value-list-descp {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.founder {
+  padding: 0px 20px 120px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.founder-text-container {
+  padding: 0px 105px;
+}
+
+.founder-text-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 56px;
+}
+
+#post {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  color: #6c6c6c;
+}
+
+#name {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+
+#story{
+    font-family: "Source Serif Pro", serif;
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
 .rq-demo {
   padding: 120px 20px;
   display: flex;
@@ -241,6 +344,32 @@ footer {
     gap: 56px;
   }
 
+  .values {
+    padding: 80px 20px 120px 20px;
+  }
+
+  #values-head {
+    font-size: 32px;
+  }
+
+  .values-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .founder {
+    padding: 0px 20px 80px 20px;
+  }
+
+  .founder-img-container img{
+    content: url("about-assets/founder-Image-1.svg");
+  }
+
+  .founder-text-container{
+    padding: 0px 40px;
+  }
+
+
   .rq-demo {
     padding: 80px 20px;
   }
@@ -286,6 +415,37 @@ footer {
 
   .hero-btn {
     width: 100%;
+  }
+
+  .values {
+    padding: 40px 20px 40px 20px;
+    gap: 32px;
+  }
+
+  #values-head {
+    font-size: 24px;
+  }
+
+  .values-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .founder {
+    padding: 0px 20px 40px 20px;
+    flex-direction: column;
+  }
+
+  .founder-img-container img{
+    content: url("about-assets/founder-Image-2.svg");
+  }
+
+  .founder-text-container{
+    padding: 0px;
+  }
+
+  .founder-text-container div {
+    padding-bottom: 32px;
   }
 
   .rq-demo {
