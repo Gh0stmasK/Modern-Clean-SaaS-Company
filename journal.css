@@ -259,6 +259,17 @@ footer {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1279px) {
+  .latest-articles {
+    padding: 40px 20px 24px 20px;
+    align-items: unset;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 80px;
+    gap: 80px 40px;
+  }
+
   .rq-demo {
     padding: 80px 20px;
   }
@@ -281,6 +292,31 @@ footer {
     box-sizing: border-box;
     width: 100%;
   }
+
+  #mobile-menu-icon {
+    opacity: 100;
+  }
+
+  .latest-articles {
+    padding: 24px 20px 16px 20px;
+    align-items: unset;
+  }
+
+  .article-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px 0px;
+    padding-bottom: 40px;
+  }
+
+  .article-descp p {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+
+  .descp-title p {
+    font-size: 18px;
+  }
+
   .rq-demo {
     padding: 40px 20px;
     width: 100%;
@@ -290,6 +326,10 @@ footer {
     font-size: 24px;
     letter-spacing: -1px;
     text-align: center;
+  }
+
+  #rq-demo-button{
+    line-height: 130%;
   }
 
   footer {
