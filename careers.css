@@ -253,15 +253,23 @@ footer {
     opacity: 100%;
   }
 
-  main{
+  main {
     padding: 120px 20px 120px 20px;
+  }
+
+  main h1 {
+    font-size: 80px;
+  }
+
+  main h2 {
+    word-break: break-word;
   }
 
   .roles {
     padding: 32px 0px 0px 0px;
   }
 
-  .role-card{
+  .role-card {
     padding: 24px 24px;
     flex-direction: column;
     gap: 24px;
