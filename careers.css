@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+/* Prevent iOS automatic text size adjustments (avoids content appearing "zoomed")
+   and set a predictable box-sizing model to avoid unintentional overflow. */
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+#mobile-menu-icon {
+  opacity: 0;
+}
+
+nav .navmenu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav .navmenu-items li {
+  list-style: none;
+}
+
+nav .navmenu-items li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+#getstart {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#arrow {
+  position: relative;
+}
+
+/* Use transform for smoother GPU-accelerated animation */
+#getstart #arrow {
+  position: relative;
+  transition: transform 400ms ease;
+  will-change: transform;
+}
+
+#getstart:hover #arrow {
+  transform: translateX(8px);
+}
+
+main {
+  padding: 140px 20px 120px 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(168, 211, 255, 1) 0%,
+    rgba(255, 244, 223, 1) 100%
+  );
+}
+
+main h1 {
+  font-family: "Source Serif Pro", serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+main h2 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -5px;
+  text-align: center;
+}
+
+.roles {
+  padding: 40px 210px 120px 210px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.role-card {
+  padding: 40px 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.role-card:last-child {
+  background: transparent;
+  border: dashed 1px;
+}
+
+/* .role-title-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.role-location {
+  padding-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.role-location p {
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #6c6c6c;
+}
+
+#job-dscp {
+  padding-top: 24px;
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+#role-name {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.role-card button {
+  padding: 12px 12px;
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  white-space: nowrap;
+  transition: color 200ms ease, background-color 200ms ease;
+  will-change: color, background-color;
+}
+
+.role-card button:hover {
+  color: #bdbcbc;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #fff546;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.site-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-map-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.site-map-items {
+  list-style: none;
+}
+
+.site-map-items a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #66640f;
+}
+
+.site-map p {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #66640f;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .roles {
+    padding: 40px 20px 120px 20px;
+  }
+
+  #f-img {
+    content: url("assets/Footer\ image-1.svg");
+  }
+
+  #f-logo {
+    content: url("assets/Footer\ Logo-1.svg");
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 799px) {
+  body {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #mobile-menu-icon {
+    opacity: 100%;
+  }
+
+  .roles {
+    padding: 32px 20px 120px 20px;
+  }
+
+  .role-card{
+    padding: 24px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  footer {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .site-map {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .site-map-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-map-items a {
+    font-size: 18px;
+  }
+
+  .site-map p {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
