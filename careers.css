@@ -253,8 +253,12 @@ footer {
     opacity: 100%;
   }
 
+  main{
+    padding: 120px 20px 120px 20px;
+  }
+
   .roles {
-    padding: 32px 20px 120px 20px;
+    padding: 32px 0px 0px 0px;
   }
 
   .role-card{
