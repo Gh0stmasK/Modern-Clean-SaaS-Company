@@ -37,7 +37,7 @@ nav {
 }
 
 #mobile-menu-icon {
-  opacity: 0;
+  display: none;
 }
 
 nav .navmenu-items {
@@ -776,7 +776,11 @@ footer {
   }
 
   #mobile-menu-icon {
-    opacity: 100%;
+    display: unset;
+  }
+
+  nav .navmenu-items {
+    display: none;
   }
 
   .hero {

@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+/* Prevent iOS automatic text size adjustments (avoids content appearing "zoomed")
+   and set a predictable box-sizing model to avoid unintentional overflow. */
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+#mobile-menu-icon {
+  display: none;
+}
+
+nav .navmenu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav .navmenu-items li {
+  list-style: none;
+}
+
+nav .navmenu-items li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+#getstart {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#arrow {
+  position: relative;
+}
+
+#getstart #arrow {
+  position: relative;
+  transition: transform 400ms ease;
+  will-change: transform;
+}
+
+#getstart:hover #arrow {
+  transform: translateX(8px);
+}
+
+main {
+  padding-top: 60px;
+}
+
+.hero {
+  padding: 80px 20px 40px 20px;
+}
+
+.hero-text h1 {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -5px;
+  text-align: center;
+  padding: 16px 100px 0px 100px;
+}
+
+.sm-text {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-text p {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #6c6c6c;
+}
+
+.imgcontainer {
+  padding: 0px 20px 0px 20px;
+}
+
+.imgcontainer img {
+  width: 100%;
+}
+
+.publisher-details {
+  padding: 80px 100px 0px 100px;
+  display: flex;
+  gap: 100px;
+}
+
+.date-name {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.date #date-cap,
+.name #name-cap {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #6c6c6c;
+}
+
+.date #date-value,
+.name #name-value {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+  padding-top: 4px;
+}
+
+.description {
+  border-bottom: 1px solid #dbe0ec;
+}
+
+#d-adjust {
+  padding: 48px 0px;
+}
+
+.description p {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 50px;
+  padding: 48px 100px 80px 528px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.article #article-head {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+
+.article #article-text {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -1px;
+}
+
+.recent-article {
+  background-color: #f6f8fb;
+  padding: 120px 20px;
+}
+
+.recent-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.recent-article p{
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+.recent-article a{
+  text-decoration: none;
+  color: #000000;
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+footer {
+  background-color: #fff546;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.site-map {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-map-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.site-map-items {
+  list-style: none;
+}
+
+.site-map-items a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #66640f;
+}
+
+.site-map p {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #66640f;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1279px) {
+  .imgcontainer img {
+    content: url("Carbon-Accounting-Myths-Models-and-Must-Haves-Assets/s2-Image-1.svg");
+  }
+
+  .hero-text h1 {
+    font-size: 64px;
+    padding: 0px;
+  }
+
+  .date-name {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .date,
+  .name {
+    width: 100%;
+  }
+
+  .publisher-details {
+    flex-direction: column;
+    padding: 80px 80px 0px 80px;
+    gap: 40px;
+  }
+
+  .article-body {
+    padding: 48px 95px 80px 80px;
+  }
+
+  #f-img {
+    content: url("local-assets/Footer\ image-1.svg");
+  }
+
+  #f-logo {
+    content: url("local-assets/Footer\ Logo-1.svg");
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 799px) {
+  body {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #mobile-menu-icon {
+    display: unset;
+  }
+
+  nav .navmenu-items {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    padding: 0px;
+    letter-spacing: -2px;
+  }
+
+  .imgcontainer img {
+    content: url("Carbon-Accounting-Myths-Models-and-Must-Haves-Assets/s2-Image-2.svg");
+  }
+
+  .publisher-details {
+    flex-direction: column;
+    padding: 40px 20px 0px 20px;
+    gap: 32px;
+  }
+
+  .date-name {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .date,
+  .name {
+    width: 100%;
+  }
+
+  .description p {
+    font-size: 18px;
+    letter-spacing: -0.5px;
+  }
+
+  #d-adjust {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  .article-body {
+    padding: 40px 20px 40px 20px;
+    gap: 55px;
+  }
+
+  .article #article-head {
+    font-size: 19px;
+  }
+
+  .article #article-text {
+    font-size: 19px;
+  }
+
+  footer {
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+  }
+
+  .site-map {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .site-map-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-map-items a {
+    font-size: 18px;
+  }
+
+  .site-map p {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

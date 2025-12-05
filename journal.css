@@ -37,7 +37,7 @@ nav {
 }
 
 #mobile-menu-icon {
-  opacity: 0;
+  display: none;
 }
 
 nav .navmenu-items {
@@ -104,7 +104,7 @@ nav .navmenu-items li a {
   font-size: 40px;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -3px;
+  letter-spacing: -1px;
   text-align: center;
 }
 
@@ -294,7 +294,11 @@ footer {
   }
 
   #mobile-menu-icon {
-    opacity: 100;
+    display: unset;
+  }
+
+  nav .navmenu-items {
+    display: none;
   }
 
   .latest-articles {
@@ -328,7 +332,7 @@ footer {
     text-align: center;
   }
 
-  #rq-demo-button{
+  #rq-demo-button {
     line-height: 130%;
   }
 
