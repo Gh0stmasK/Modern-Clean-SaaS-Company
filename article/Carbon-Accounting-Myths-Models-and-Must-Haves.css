@@ -207,13 +207,13 @@ main {
   padding: 120px 20px;
 }
 
-.recent-head{
+.recent-head {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.recent-article p{
+.recent-article p {
   font-family: "Radio Canada Big", sans-serif;
   font-size: 56px;
   font-weight: 500;
@@ -221,12 +221,57 @@ main {
   letter-spacing: -1.5px;
 }
 
-.recent-article a{
+.recent-article a {
   text-decoration: none;
   color: #000000;
   font-family: "Source Serif Pro", serif;
   font-size: 20px;
   line-height: 120%;
+}
+
+.cards {
+  width: 100%;
+}
+
+.article-cards {
+  display: flex;
+  gap: 16px;
+  padding-top: 20px;
+}
+
+#a-head {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.a-duration {
+  display: flex;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.a-duration p {
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #6c6c6c;
+}
+
+#a-descp {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  padding-top: 24px;
+  text-align: left;
 }
 
 footer {
@@ -299,8 +344,21 @@ footer {
     gap: 40px;
   }
 
+  .recent-article {
+    padding: 80px 20px;
+  }
+
   .article-body {
     padding: 48px 95px 80px 80px;
+  }
+
+  .article-cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cards img {
+    width: 100%;
   }
 
   #f-img {
@@ -377,6 +435,37 @@ footer {
 
   .article #article-text {
     font-size: 19px;
+  }
+
+  .recent-article {
+    padding: 40px 20px;
+  }
+
+  .recent-article p {
+    text-align: center;
+  }
+
+  .recent-head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-bottom: 24px;
+  }
+
+  .article-cards {
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 0px;
+  }
+
+  .cards img {
+    width: 100%;
+  }
+
+  #a-descp,
+  #a-head {
+    font-size: 18px;
   }
 
   footer {
