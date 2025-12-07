@@ -94,7 +94,7 @@ main {
   font-size: 80px;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   text-align: center;
   padding: 16px 100px 0px 100px;
 }
@@ -165,7 +165,7 @@ main {
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   padding-bottom: 48px;
 }
 
@@ -174,7 +174,7 @@ main {
   flex-direction: column;
   align-items: end;
   gap: 50px;
-  padding: 48px 100px 80px 522px;
+  padding: 48px 88px 80px 502px;
 }
 
 .article {
@@ -196,7 +196,7 @@ main {
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -1px;
+  letter-spacing: -1.39px;
 }
 
 .recent-article {
@@ -317,7 +317,7 @@ footer {
 
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .imgcontainer img {
-    content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-1.svg");
+    content: url("Sustainability-Isn’t-a-Side-Project-Making-Impact-Operational-Assets/Hero-Image-1.svg");
   }
 
   .hero-text h1 {
@@ -350,8 +350,13 @@ footer {
   }
 
   .article-body {
-    padding: 48px 95px 80px 80px;
+    padding: 48px 80px 190px 80px;
   }
+
+  .article #article-text{
+    letter-spacing: -0.8px;
+  }
+
 
   .article-cards {
     flex-direction: column;
@@ -396,7 +401,7 @@ footer {
   }
 
   .imgcontainer img {
-    content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-2.svg");
+    content: url("Sustainability-Isn’t-a-Side-Project-Making-Impact-Operational-Assets/Hero-Image-2.svg");
   }
 
   .publisher-details {
@@ -423,7 +428,7 @@ footer {
   }
 
   .article-body {
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px 120px 20px;
     gap: 55px;
   }
 
@@ -432,7 +437,7 @@ footer {
   }
 
   .article #article-text {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .recent-article {
