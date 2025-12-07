@@ -116,6 +116,7 @@ nav .navmenu-items li a {
 
 .article {
   box-sizing: border-box;
+  cursor: pointer;
 }
 .article-flex {
   display: flex;
