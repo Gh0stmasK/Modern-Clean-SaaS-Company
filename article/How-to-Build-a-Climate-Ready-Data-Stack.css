@@ -94,7 +94,7 @@ main {
   font-size: 80px;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   text-align: center;
   padding: 16px 100px 0px 100px;
 }
@@ -156,25 +156,26 @@ main {
   padding-top: 4px;
 }
 
-.description {
+#short-dscp {
   border-bottom: 1px solid #dbe0ec;
 }
 
-.description p {
+#short-dscp {
   font-family: "Source Serif Pro", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   padding-bottom: 48px;
 }
 
 .article-body {
+  padding-top: 48px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 50px;
-  padding: 48px 100px 80px 522px;
 }
 
 .article {
@@ -196,7 +197,7 @@ main {
   font-size: 20px;
   font-weight: 400;
   line-height: 140%;
-  letter-spacing: -1px;
+  letter-spacing: -1.39px;
 }
 
 .recent-article {
@@ -227,6 +228,10 @@ main {
 }
 
 .cards {
+  width: 100%;
+}
+
+.cards img {
   width: 100%;
 }
 
@@ -318,6 +323,7 @@ footer {
 @media screen and (min-width: 800px) and (max-width: 1279px) {
   .imgcontainer img {
     content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-1.svg");
+    width: 100%;
   }
 
   .hero-text h1 {
@@ -341,7 +347,7 @@ footer {
     gap: 40px;
   }
 
-  .description{
+  .description {
     padding-top: 96px;
   }
 
@@ -349,8 +355,8 @@ footer {
     padding: 80px 20px;
   }
 
-  .article-body {
-    padding: 48px 95px 80px 80px;
+  .article #article-text {
+    letter-spacing: -0.8px;
   }
 
   .article-cards {
@@ -397,6 +403,7 @@ footer {
 
   .imgcontainer img {
     content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-2.svg");
+    width: 100%;
   }
 
   .publisher-details {
@@ -416,14 +423,11 @@ footer {
   }
 
   .description p {
-    padding-top: 82px;
     font-size: 18px;
     letter-spacing: -0.5px;
-    padding-bottom: 40px;
   }
 
   .article-body {
-    padding: 40px 20px 40px 20px;
     gap: 55px;
   }
 
@@ -432,7 +436,7 @@ footer {
   }
 
   .article #article-text {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .recent-article {
