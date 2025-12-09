@@ -126,6 +126,13 @@ main h2 {
   justify-content: space-between;
 }
 
+.role-card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 200ms ease;
+  will-change: box-shadow;
+}
+
 .role-card:last-child {
   background: transparent;
   border: dashed 1px;

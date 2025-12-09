@@ -117,6 +117,14 @@ nav .navmenu-items li a {
 .article {
   box-sizing: border-box;
   cursor: pointer;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.article:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 200ms ease;
+  will-change: box-shadow;
 }
 .article-flex {
   display: flex;
