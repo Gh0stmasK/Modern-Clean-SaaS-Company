@@ -55,7 +55,7 @@ header > img:hover {
   list-style: none;
 }
 
-.navmenu-items li a {
+.navmenu-items li p {
   color: #000000;
   text-decoration: none;
   font-family: "Radio Canada Big", sans-serif;
@@ -788,11 +788,23 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
+    width: 100%;
   }
 
-  .navmenu-items li a {
-    font-size: 40px;
-    letter-spacing: -3px;
+  .navmenu-items li p {
+    font-size: 24px;
+    letter-spacing: -1.5px;
+    padding-bottom: 20px;
+  }
+
+  .navmenu-items li{
+    width: 100%;
+    border-bottom: 1px solid #dbe0ec;
+    display: flex;
+  }
+
+  #getstart {
+    text-align: center;
   }
 
   #arrow{
@@ -802,11 +814,6 @@ footer {
   #mobile-menu-icon {
     display: unset;
   }
-
-  /* .navmenu-items {
-    flex-direction: column;
-    align-items: flex-start;
-  } */
 
   .hero {
     width: 100%;
