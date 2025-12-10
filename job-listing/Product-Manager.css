@@ -82,199 +82,173 @@ nav .navmenu-items li a {
 }
 
 main {
-  padding-top: 60px;
+  padding: 140px 230px 120px 230px;
+  background: linear-gradient(
+    180deg,
+    rgba(168, 211, 255, 1) 0%,
+    rgba(255, 244, 223, 1) 100%
+  );
 }
 
-.hero {
-  padding: 80px 20px 40px 20px;
-}
-
-.hero-text h1 {
-  font-family: "Radio Canada Big", sans-serif;
-  font-size: 80px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: -3px;
-  text-align: center;
-  padding: 16px 100px 0px 100px;
-}
-
-.sm-text {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 16px;
-}
-
-.sm-text p {
-  font-family: "Source Serif Pro", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -1px;
-  color: #6c6c6c;
-}
-
-.imgcontainer {
-  padding: 0px 20px 0px 20px;
-}
-
-.imgcontainer img {
-  width: 100%;
-}
-
-.publisher-details {
-  padding: 80px 100px 0px 100px;
-  display: flex;
-  gap: 100px;
-}
-
-.date-name {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  width: 100%;
-}
-
-.date #date-cap,
-.name #name-cap {
-  font-family: "Source Serif Pro", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -1px;
-  color: #6c6c6c;
-}
-
-.date #date-value,
-.name #name-value {
-  font-family: "Radio Canada Big", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -1px;
-  padding-top: 4px;
-}
-
-#short-dscp {
-  border-bottom: 1px solid #dbe0ec;
-}
-
-#short-dscp {
-  font-family: "Source Serif Pro", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -1.5px;
-  padding-bottom: 65px;
-}
-
-.article-body {
-  padding-top: 48px;
-  padding-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 50px;
-}
-
-.article {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.article #article-head {
-  font-family: "Radio Canada Big", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: -0.5px;
-}
-
-.article #article-text {
-  font-family: "Source Serif Pro", serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: -1.39px;
-}
-
-.recent-article {
-  background-color: #f6f8fb;
-  padding: 120px 20px;
-}
-
-.recent-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.recent-article p {
-  font-family: "Radio Canada Big", sans-serif;
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: -1.5px;
-}
-
-.recent-article a {
+#back {
   text-decoration: none;
   color: #000000;
   font-family: "Source Serif Pro", serif;
   font-size: 20px;
+  font-weight: 400;
   line-height: 120%;
+  letter-spacing: -0.5px;
+  text-align: center;
+  display: block;
+  padding-bottom: 40px;
 }
 
-.cards {
-  width: 100%;
+.job-description {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
 }
 
-.cards img {
-  width: 100%;
-}
-
-.article-cards {
+.job-header {
+  padding-bottom: 48px;
+  border-bottom: 1px solid #dbe0ec;
   display: flex;
-  gap: 16px;
-  padding-top: 20px;
+  gap: 40px;
 }
 
-#a-head {
+#job-name {
   font-family: "Radio Canada Big", sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -0.5px;
-  padding-top: 20px;
-  text-align: left;
+  letter-spacing: -1.5px;
 }
 
-.a-duration {
+.type-location {
   display: flex;
   gap: 8px;
   padding-top: 8px;
 }
 
-.a-duration p {
-  font-family: "Geist Mono", monospace;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 100%;
-  letter-spacing: 0px;
-  color: #6c6c6c;
-}
-
-#a-descp {
+.type-location p {
   font-family: "Source Serif Pro", serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: -0.6px;
+  letter-spacing: -1px;
+  color: #6c6c6c;
+}
+
+#short-dscp {
   padding-top: 24px;
-  text-align: left;
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+.apply-now {
+  padding: 12px 12px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100px;
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: color 200ms ease, background-color 200ms ease;
+  will-change: color, background-color;
+}
+
+.apply-now:hover {
+  color: #bdbcbc;
+  cursor: pointer;
+}
+
+.roles-responsiblities {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #dbe0ec;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rr-content #head {
+  font-family: "Radio Canada Big", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -1px;
+  padding-bottom: 25px;
+}
+
+.rr-content ul {
+  padding-left: 25px;
+}
+
+.rr-content ul li {
+  padding-bottom: 10px;
+}
+
+.rr-content #text {
+  font-family: "Source Serif Pro", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.59px;
+}
+
+.ready {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.ready p {
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+}
+
+.ready button {
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  padding: 12px 12px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  width: 120px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: color 200ms ease, background-color 200ms ease;
+  will-change: color, background-color;
+}
+.ready button:hover {
+  color: #bdbcbc;
+  cursor: pointer;
+}
+
+.ready button div {
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
 }
 
 footer {
@@ -321,47 +295,20 @@ footer {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1279px) {
-  .imgcontainer img {
-    content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-1.svg");
-    width: 100%;
+  main {
+    padding: 140px 40px 120px 40px;
   }
 
-  .hero-text h1 {
-    font-size: 64px;
-    padding: 0px;
+  #job-name{
+    font-size: 32px;
   }
 
-  .date-name {
-    flex-direction: row;
-    gap: 30px;
+  #short-dscp {
+    letter-spacing: -0.7px;
   }
 
-  .date,
-  .name {
-    width: 100%;
-  }
-
-  .publisher-details {
-    flex-direction: column;
-    padding: 80px 80px 0px 80px;
-    gap: 40px;
-  }
-
-  .recent-article {
-    padding: 80px 20px;
-  }
-
-  .article #article-text {
-    letter-spacing: -0.8px;
-  }
-
-  .article-cards {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .cards img {
-    width: 100%;
+  .rr-content #text {
+    letter-spacing: -0.75px;
   }
 
   #f-img {
@@ -387,82 +334,34 @@ footer {
     display: none;
   }
 
-  .hero {
-    padding: 60px 20px 40px 20px;
+  main {
+    padding: 120px 20px;
   }
 
-  .hero-text h1 {
-    font-size: 36px;
-    padding: 0px;
-    letter-spacing: -2px;
-  }
-
-  .imgcontainer img {
-    content: url("How-to-Build-a-Climate-Ready-Data-Stack-Assets/Hero-Image-2.svg");
-    width: 100%;
-  }
-
-  .publisher-details {
-    flex-direction: column;
-    padding: 40px 20px 0px 20px;
-    gap: 32px;
-  }
-
-  .date-name {
-    flex-direction: row;
-    gap: 16px;
-  }
-
-  .date,
-  .name {
-    width: 100%;
-  }
-
-  .description p {
+  #back{
     font-size: 18px;
-    letter-spacing: -0.5px;
   }
 
-  .article-body {
-    gap: 55px;
+  #job-name{
+    font-size: 24px;
   }
 
-  .article #article-head {
-    font-size: 19px;
+  .job-description {
+    padding: 24px 24px 32px 24px;
   }
 
-  .article #article-text {
-    font-size: 20px;
-  }
-
-  .recent-article {
-    padding: 40px 20px;
-  }
-
-  .recent-article p {
-    text-align: center;
-  }
-
-  .recent-head {
+  .job-header {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
+    gap: 24px;
   }
 
-  .article-cards {
-    flex-direction: column;
-    gap: 32px;
-    padding-top: 0px;
+  #short-dscp {
+    font-size: 18px;
+    letter-spacing: -0.3px;
   }
 
-  .cards img {
-    width: 100%;
-  }
-
-  #a-descp,
-  #a-head {
+  .rr-content #text{
     font-size: 18px;
   }
 

@@ -326,7 +326,6 @@ nav .navmenu-items li a {
   justify-content: flex-start;
   gap: 32px;
   background-color: #ffffff;
-  border: 1px solid red;
 }
 
 #rq-demo-head {
@@ -362,7 +361,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid red;
 }
 
 .site-map {

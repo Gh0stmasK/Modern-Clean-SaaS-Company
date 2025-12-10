@@ -95,7 +95,6 @@ nav .navmenu-items li a {
   justify-content: center;
   align-items: center;
   gap: 56px;
-  border: 1px solid red;
 }
 
 .hero-content-container {
@@ -178,7 +177,6 @@ nav .navmenu-items li a {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  border: 1px solid red;
 }
 
 .section-2-container {
@@ -275,7 +273,6 @@ nav .navmenu-items li a {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  border: 1px solid red;
 }
 
 .s3-h1 {
@@ -341,7 +338,6 @@ nav .navmenu-items li a {
   justify-content: center;
   padding: 120px 20px;
   position: relative;
-  border: 1px solid red;
 }
 
 .section-4-container {
@@ -412,7 +408,6 @@ nav .navmenu-items li a {
   gap: 40px;
   /* border: 1px solid blue; */
   position: relative;
-  border: 1px solid red;
 }
 
 #s5-heading {
@@ -498,7 +493,6 @@ nav .navmenu-items li a {
 
 .section-6 {
   padding: 120px 20px;
-  border: 1px solid red;
 }
 
 .section-6-container {
@@ -557,7 +551,6 @@ nav .navmenu-items li a {
   justify-content: center;
   gap: 32px;
   background-color: #f6f8fb;
-  border: 1px solid red;
 }
 
 #rq-demo-head {
@@ -593,7 +586,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid red;
 }
 
 .site-map {
