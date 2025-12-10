@@ -26,6 +26,11 @@ header {
   background-color: transparent;
   backdrop-filter: blur(30px);
   z-index: 1000;
+  padding: 20px 20px;
+}
+
+header>img:hover{
+  cursor: pointer;
 }
 
 nav {
@@ -33,7 +38,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 20px;
 }
 
 #mobile-menu-icon {
